@@ -9,11 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     // MARK: Properties
     // Outlets
     @IBOutlet weak var phraseInputField: UITextField!
-
+    
     @IBOutlet weak var outputResult: UILabel!
     
     // MARK: Methods
@@ -41,8 +41,28 @@ class ViewController: UIViewController {
             return
         }
         
+        var happyCount = 0
+        var sadCount = 0
+        
+        let happyEmojis = "😃😊🙂😄"
+        let sadEmojis = "☹🙁😕😔"
+        
+        for char in phraseInput {
+            print(char)
+            
+            if happyEmojis.contains(char) {
+                happyCount += 1
+                
+                if sadEmojis.contains(char) {
+                    sadCount += 1
+                }
+            }
+            
+            
+            
+        }
+        
+        
     }
     
-    
 }
-
