@@ -62,6 +62,22 @@ class ViewController: UIViewController {
             
         }
         
+        if happyCount > sadCount {
+            outputResult.text = "The result is happy"
+        }
+        
+        if sadCount > happyCount {
+            outputResult.text = "The result is sad"
+        }
+        
+        if happyCount == sadCount, happyCount + sadCount >= 0 {
+            outputResult.text = "The result is unsure"
+        }
+        
+        if happyCount + sadCount == 0 {
+            outputResult.text = "The result is none"
+        }
+        
         
     }
     
