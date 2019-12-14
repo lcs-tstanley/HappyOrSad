@@ -53,9 +53,9 @@ class ViewController: UIViewController {
             if happyEmojis.contains(char) {
                 happyCount += 1
                 
-                if sadEmojis.contains(char) {
-                    sadCount += 1
-                }
+            }
+            if sadEmojis.contains(char) {
+                sadCount += 1
             }
             
             
